@@ -32,8 +32,8 @@ typedef struct struct_message {
 struct_message data;
 
 // change to your own wifi
-const char* ssid = "me";
-const char* password = "23456788";
+const char* ssid = "";
+const char* password = "";
 
 // Insert Firebase project API Key
 #define API_KEY "AIzaSyCgCPwravCD0z1yA2-zBn8BhD5tGLQ2Egc"
