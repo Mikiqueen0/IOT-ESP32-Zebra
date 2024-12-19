@@ -2,7 +2,7 @@
 # Traffic Light Control System with ESP32 and Camera Module
 
 ## Overview
-This project implements a traffic light control system using the **ESP32 microcontroller** and **camera module (ESP32-CAM)**. The system is designed to manage car and pedestrian traffic lights with a countdown mechanism, control a servo motor for a barrier, and detect vehicles and pedestrians using IR and ultrasonic sensors. Additionally, the ESP32-CAM is integrated to capture video or stream images, allowing real-time monitoring of the intersection.
+This project implements a traffic light control system using the **ESP32 microcontroller** and **camera module (ESP32-CAM)**. The system is designed to manage car and pedestrian traffic lights with a countdown mechanism, control a servo motor for a barrier, and detect vehicles and pedestrians using IR and ultrasonic sensors. Additionally, the ESP32-CAM is integrated to capture image and upload to Firebase cloud storage
 
 ## Components Used
 ### For Traffic Light System:
@@ -17,7 +17,6 @@ This project implements a traffic light control system using the **ESP32 microco
 
 ### For Camera System:
 - **ESP32-CAM Module**: Provides camera functionality for capturing and streaming images.
-- **MicroSD Card**: For storing images or video streams if required.
 - **Camera Module**: Integrated into the ESP32-CAM for video capture.
 
 ## Libraries Used
@@ -41,10 +40,7 @@ This project implements a traffic light control system using the **ESP32 microco
 - **Buzzer Alerts**: The buzzer sounds when specific events occur (e.g., car detected).
 
 ### Camera Stream (ESP32-CAM):
-- **Real-Time Video Stream**: Captures real-time images or video of the intersection using the ESP32-CAM module.
 - **JPEG Image Capture**: Capture snapshots when required for event logging or monitoring.
-- **SD Card Storage**: Store images or video files on a microSD card connected to the ESP32-CAM.
-- **Web Server**: Provides a live stream of the camera feed over Wi-Fi for remote monitoring.
 
 ## Pin Configuration
 
@@ -93,7 +89,6 @@ Install the required libraries via the Arduino Library Manager:
   
 #### Camera Module Wiring:
 - The ESP32-CAM typically uses the default camera pins; however, ensure it is correctly connected to the camera module.
-- If you're using an SD card for storing images or videos, ensure the SD card is correctly inserted and connected.
 
 ### Upload the Code
 1. Open the Arduino IDE and load the provided code into a new sketch.
