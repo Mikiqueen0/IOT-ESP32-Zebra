@@ -11,8 +11,8 @@
 #include <Adafruit_SH110X.h>
 
 // Change to your own wifi
-const char* ssid = "me";
-const char* password = "23456788";
+const char* ssid = "";
+const char* password = "";
 
 const char* ntpServer = "pool.ntp.org";
 const long  gmtOffset_sec = 7 * 60 * 60;
